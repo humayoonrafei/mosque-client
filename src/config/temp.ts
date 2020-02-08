@@ -1,4 +1,0 @@
-// Placeholder
-export const temp = () => {
-
-};
