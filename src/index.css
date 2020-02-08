@@ -1,0 +1,44 @@
+/* // Use CSS variables instead of SASS variables */
+:root {
+  /* Colors */
+  --color-primary: #88bacb;
+  --color-primary-light: #00b4ae;
+  --color-primary-dark: #006e93;
+  --color-background: #ffffff;
+}
+
+/* Universal reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* Set the global font size so we can use "rems" */
+  box-sizing: border-box; /* Do not include margin and padding for an element's width and height */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Get rid of increase and decrease arrows on inputs of type number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
